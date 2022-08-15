@@ -22,7 +22,7 @@ document.querySelector("#getdata").addEventListener("click", function () {
 });
 
 function display() {
-    let url = 'http://127.0.0.1:3000/find';
+    let url = "https://baby-name-suggester-api.herokuapp.com/find";
     fetch(url, {
 
         // Adding method type
