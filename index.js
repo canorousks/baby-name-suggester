@@ -11,7 +11,7 @@ var corsOption = {
     origin: "*"
 };
 
-app.use(cors());
+app.use(cors(corsOption));
 
 app.use(express.json());
 
@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/temp.html");
 });
 
-const PORT = 3000
+const PORT = 4000
 
 app.listen(process.env.PORT || PORT, () => {
     console.log(__dirname)
