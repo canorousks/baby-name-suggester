@@ -22,9 +22,8 @@ document.querySelector("#getdata").addEventListener("click", function () {
 });
 
 function display() {
-    // let url = "https://baby-name-suggester-api.herokuapp.com/find"
-    let url = "http://localhost:3000/find";
-    ;
+    let url = "https://baby-name-suggester-api.herokuapp.com/find";
+    // let url = "http://localhost:3000/find";
     fetch(url, {
 
         // Adding method type
